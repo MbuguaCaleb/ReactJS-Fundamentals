@@ -115,3 +115,16 @@ Render method brings into realisation JSX-rendering javascript
 into html...converts the state modelled component
 
 ```
+
+
+**code**
+
+```
+App.JS Is our main app component
+
+The app.js is referenced in the index JS that calls the react single page ID in public index.html
+
+Everything in react is a single page application referenced in the index.html root ID.
+
+You can make other co
+```
