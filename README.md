@@ -128,3 +128,15 @@ Everything in react is a single page application referenced in the index.html ro
 
 You can make other co
 ```
+
+
+```
+We have our mainApp Componet that points to the index.JS and which is referenced in the index.html
+
+```
+
+
+```
+We may have classBased or functional based components.
+
+```
