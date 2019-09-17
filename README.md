@@ -140,3 +140,11 @@ We have our mainApp Componet that points to the index.JS and which is referenced
 We may have classBased or functional based components.
 
 ```
+
+
+```
+
+From states you can pass properties to components
+passing properties to the Todo Item
+
+```
