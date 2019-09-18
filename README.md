@@ -187,3 +187,26 @@ export class TodoItem extends Component {
 
 (d)JSX Styles are different fromm the normal css styles
 ```
+
+```
+When adding unique methods to components in React,you should use the bind
+
+ar arrow functions
+
+```
+
+```
+Notice that there are react state manager like redux and context API
+Without a state manager notice that you cannot call a state directly from
+the class you are in.
+
+You must go down the ladder if you are not using a state manager like redux...
+Properties give you access to the states proressively.
+
+```
+
+
+```
+Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects into a bunch of variables, as sometimes that’s more convenient.
+
+```

@@ -10,7 +10,9 @@ class Todos extends Component {
     return this.props.todos.map((todo) =>(
 
        /* passing a todo property which is a single element looped through */
-      <TodoItem key ={todo.id} todo ={todo}/>
+      <TodoItem key ={todo.id} todo ={todo} markComplete ={
+        this.props.markComplete
+      }/>
   ));
   }
 
