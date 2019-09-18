@@ -18,7 +18,7 @@ class App extends Component {
 
         id:2,
         title:'Dinner with wife',
-        completed :false
+        completed :true
 
       },
       {
@@ -39,7 +39,7 @@ class App extends Component {
 
  <div className="App"> 
 
-    {/* addies properties to the todo component from the states */}
+    {/* adds properties to the todo component from the states */}
     <Todos todos ={ this.state.todos}
     
     />

@@ -148,3 +148,42 @@ From states you can pass properties to components
 passing properties to the Todo Item
 
 ```
+**PropTYpes**
+```
+Are a sort of validation of the properties passed to the components
+from the classes.
+
+They define what is to be expected in a particular component class
+
+```
+
+**styling**
+
+```
+Styling of the components--Inlines styling(double braces)
+
+
+
+export class TodoItem extends Component {
+    render() {
+        return (
+            <div style ={{backgroundColor: '#f4f4f4'}}>
+
+        {/* Already has data from the propery thus you may extract */}
+               <p>{this.props.todo.title}</p>
+              
+                
+            </div>
+        )
+    }
+}
+
+
+(b)You may also style via a variable
+
+
+(c)You may as well style via a function
+
+
+(d)JSX Styles are different fromm the normal css styles
+```
