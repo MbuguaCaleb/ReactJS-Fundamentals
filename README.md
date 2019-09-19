@@ -272,6 +272,42 @@ You can style in the app.css or component by component
 
 You can syle the components or use classNames and style in the app.css
 
+```
 
 
+**ReactHttp**
+```
+Many times while using react you will be requiring a third party API or Library
+
+```
+
+**Axios for HTTP Requests**
+```
+
+Learn this from travesy Media
+React LifeCycle Events...
+(a)render
+(b)componentDidMount-used in particular when making external Http Requests.
+
+```
+
+**PropTypes**
+```
+Remeber the practiceo of adding propType to property..
+```
+
+**Deployment**
+```
+npm rub build compiles all your react assests ready for deployment
+```
+
+
+**React ShortNotes**
+```
+By Mbugua Caleb
+```
+
+**Tutor**
+```
+Travesy Media..!
 ```

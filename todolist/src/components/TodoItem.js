@@ -40,7 +40,9 @@ TodoItem.propTypes ={
 
 
     //remeber here that an object has been passed but not an array
-    todo:PropTypes.object.isRequired
+    todo:PropTypes.object.isRequired,
+    markComplete:PropTypes.func.isRequired,
+    delTodo:PropTypes.func.isRequired,
   
   }
 

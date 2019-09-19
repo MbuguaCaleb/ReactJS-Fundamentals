@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class AddTodo extends Component {
 
@@ -52,5 +53,16 @@ style={{flex:'1'}}
         )
     }
 }
+
+//PropTYPES
+AddTodo.propTypes ={
+
+
+    //remeber here that an object has been passed but not an array
+    addTodo:PropTypes.func.isRequired,
+ 
+  
+  }
+
 
 export default AddTodo
