@@ -11,8 +11,7 @@ class Todos extends Component {
 
        /* passing a todo property which is a single element looped through */
       <TodoItem key ={todo.id} todo ={todo} markComplete ={
-        this.props.markComplete
-      }/>
+        this.props.markComplete } delTodo ={this.props.delTodo}/>
   ));
   }
 

@@ -13,25 +13,6 @@ export class TodoItem extends Component {
             textDecoration:this.props.todo.completed ?
             'line-through':'none'
         }
-        /*
-        if(this.props.todo.completed){
-            return {
-
-                textDecoration : 'line-through'
-
-            }
-        }
-            else{
-
-      return{
-
-          textDecoration:'none'
-
-}
-
-            }
-
-            */
         }
    
     render() {
@@ -44,6 +25,8 @@ export class TodoItem extends Component {
                <input type="checkbox" onChange ={this.props.markComplete.bind(this,id)
             }/>{''}
                {title}
+      
+               <button onClick={this.props.delTodo.bind(this, id)}style={btnStyle}>x</button>
                </p>
               
                 
@@ -61,5 +44,18 @@ TodoItem.propTypes ={
   
   }
 
+
+const btnStyle ={
+
+    background:'#ff0000',
+    color:'#fff',
+    border:'none',
+    padding:'5px 9px',
+    borderRadius:'50%',
+    cursor:'pointer',
+    float:'right'
+    
+
+}
 
 export default TodoItem

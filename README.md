@@ -210,3 +210,14 @@ Properties give you access to the states proressively.
 Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects into a bunch of variables, as sometimes that’s more convenient.
 
 ```
+```
+Everything in react gets appended to app.JS because it is the one that has got a link to react indexJs
+APP.CSS IS OUR GLOBAL STYLE SHEET WHEN CODING WITH REACT Js.
+...React almost has got similar HTML COMPONENTS ...AS WELL AS CSS...ONLY A SMALL DIFFFERENCE IN THE MODEL
+THAT REACT USES WHICH IS COMPONENTS AND STATES.
+
+JSX STYLES ARE SLIGHTY DIFFERENT FROM THOSE IN HTML AND CSS...
+As well as the HTML COMPONENTS ARE AS WELL SLIGHTLY DIFFERENT!!
+You can as well use class names in your JSX..and style normally in CSS.
+
+```
