@@ -221,3 +221,18 @@ As well as the HTML COMPONENTS ARE AS WELL SLIGHTLY DIFFERENT!!
 You can as well use class names in your JSX..and style normally in CSS.
 
 ```
+
+```
+Forms
+
+Work with the onChange to fire Events....
+//remeber arrow functions role when using custom reactMethods
+//There are Component level states...where the speified component
+has its own state and you do not have to use the app level state
+
+When submitting data via a form you should fire the submit event.
+
+**Know where your state is...//helps in manual state Management
+**Know where your component has been called.
+
+```

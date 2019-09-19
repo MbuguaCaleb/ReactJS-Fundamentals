@@ -3,6 +3,7 @@ import Header from './components/layouts/Header'
 import Todos from './components/Todos'
 import AddTodo from './components/AddTodo'
 import './App.css';
+import uuid from 'uuid';
 
 class App extends Component {
 
@@ -11,21 +12,21 @@ class App extends Component {
     todos:[
       {
 
-        id:1,
+        id:uuid.v4(),
         title:'Take out the trash',
         completed :false
 
       },
       {
 
-        id:2,
+        id:uuid.v4(),
         title:'Dinner with wife',
         completed :true
 
       },
       {
 
-        id:3,
+        id:uuid.v4(),
         title:'Meeting with boss',
         completed :false
 
@@ -52,6 +53,24 @@ class App extends Component {
     });
   }
 
+  //Add Todo
+  addTodo =(title) =>{
+
+    //console.log(title)
+    const newTodo ={
+
+      id:uuid.v4(),
+      title,
+      completed:false
+        
+    }
+    this.setState({
+      todos:[...this.state.todos,newTodo]
+    })
+
+  }
+
+
 
   //Delete Todo
 
@@ -76,7 +95,7 @@ class App extends Component {
 <div className="container">
    {/* adds properties to the todo component from the states */}
    <Header />
-    <AddTodo/>
+    <AddTodo addTodo ={this.addTodo}/>
 
     <Todos todos ={ this.state.todos} markComplete ={this.markComplete}
 
