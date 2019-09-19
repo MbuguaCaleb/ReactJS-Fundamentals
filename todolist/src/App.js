@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import Header from './components/layouts/Header'
-import Todos from './components/Todos'
-import AddTodo from './components/AddTodo'
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import Header from './components/layouts/Header';
+import Todos from './components/Todos';
+import AddTodo from './components/AddTodo';
+import About from './components/pages/About';
 import './App.css';
 import uuid from 'uuid';
 
@@ -89,22 +91,38 @@ class App extends Component {
   render(){
 
     return (
+<Router>
 
  <div className="App"> 
 
 <div className="container">
    {/* adds properties to the todo component from the states */}
+  {/*Note that the header is component one*/ }
    <Header />
-    <AddTodo addTodo ={this.addTodo}/>
+   <Route exact path="/" render={props =>(
 
-    <Todos todos ={ this.state.todos} markComplete ={this.markComplete}
+     <React.Fragment>
 
-    delTodo ={this.delTodo}
-    
-    />
+{/*Note that the header is component two*/ }
+<AddTodo addTodo ={this.addTodo}/>
+
+{/*Note that the header is component three*/ }
+<Todos todos ={ this.state.todos} markComplete ={this.markComplete}
+
+delTodo ={this.delTodo}
+
+/>
+     </React.Fragment>
+   )}/>
+
+
+{/*Note that the header is component four*/ }
+   <Route path="/about"  component ={About}/>
+   
 
 </div>
  </div>
+ </Router>
     );
 
   }

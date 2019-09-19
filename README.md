@@ -236,3 +236,42 @@ When submitting data via a form you should fire the submit event.
 **Know where your component has been called.
 
 ```
+
+**React-Router**
+```
+It is installed separatley react-router
+
+npm i react-router-dom
+
+React Fragment is used when you need to render an element but not as
+a div...
+
+Allows you to use JSX.
+
+Router helps you in the implemetation of your urls...eg rendering to a different page
+
+Notice that it is the rendered react components which display
+
+
+```
+
+**React-Fragments**
+```
+A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+
+Rember by default that react is rendered as a single div..!But may times you may need to render mutiple elements..
+
+You  can create as many components and routes as you wish..
+```
+
+
+**RouteLinks**
+
+```
+You can style in the app.css or component by component
+
+You can syle the components or use classNames and style in the app.css
+
+
+
+```
